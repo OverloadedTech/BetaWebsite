@@ -1,0 +1,27 @@
+Certainly, this is an HTML file for the "History" page of a website called "OverloadedTech". Let's break it down section by section:
+
+<!DOCTYPE html>: This line is a document type declaration that helps with browser compatibility.
+
+<html>: This tag signifies the start of an HTML document.
+
+<head>: Contains information pertaining to the entire document, such as its title.
+
+<title>OverloadedTech | History</title>: This line sets the title of the webpage that is displayed on the tab in a web browser.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: This tag helps with responsive web design by setting the viewport width to the width of the device.
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">: This line links to an external stylesheet for the Google font 'Roboto'.
+
+<style>...</style>: This section contains inline CSS that styles the HTML document. It globally styles all elements to center the text, set the color to white, set the font to 'Roboto' and set the background color to a dark gray. It also styles the body of the page using flexbox to centrally align the content, and styles the history and GitHub buttons.
+
+<body>: Contains the actual content to be displayed to users.
+
+<h1>History</h1>: This is a top-level header for the page.
+
+<p>Didn't have much time, sorry :(</p>: This paragraph provides a message to users about a lack of time for possibly further content.
+
+<button class="history-btn" onclick="window.location.href='/';">Back to Home</button>: This button, when clicked, navigates the user back to the home page.
+
+<h5>: Styles headers with h5 HTML tag to be bold.
+
+The majority of the site's text is styled to be centered and the background color is a dark gray by default. The site uses Roboto, a font from Google Fonts. The page's buttons have been styled to be purple with various styles applied such as a hover effect that lightens the color.

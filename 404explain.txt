@@ -1,0 +1,9 @@
+This is an HTML document that represents a 404 error page, which is typically displayed when a user tries to visit a page that does not exist on the website.
+
+The <head> section of this document includes some basic setup for the webpage: It sets the page to respond to the width of the device's screen, links to a Google font called 'Roboto', and defines some CSS styles for the webpage. The styles make all the text center-aligned, white colored and they set 'Roboto' as the font for the text. The background color of the page is set to a dark grey (#262626), and all the elements are box-sized to include padding and borders in their width and height. Additional styles are defined for the body of the page, certain buttons, and header level 5 text.
+
+The <body> section of this document includes a <div> container that has an h1 heading displaying '404' and a paragraph saying "Sorry, the page you're looking for doesn't exist."
+
+There is also a paragraph with an id of 'message' that says "I will send you back home very soon (Stay safe, friend and do not get lost)...". This message is tied to a JavaScript countdown that is initiated as soon as someone lands on this page. The countdown starts at 5 seconds and decreases every second, updating the message to show how many seconds remain.
+
+Once the countdown reaches 0, the user is redirected to the root URL ("/") of the website. This is done using JavaScript's window.location.href property.

@@ -1,0 +1,15 @@
+This is an HTML file that creates the main page of a website.
+
+At a high level, this page includes a title for the webpage, viewport meta tag for mobile optimization, a link to Google's Roboto font, and multiple sections of content.
+
+The CSS styles are defined within the <head> tag. It includes global style settings for all elements (*), styles for the body, styles for two button classes (.history-btn and .github-btn), styles for h5 headers, and media query styles for smaller screens (max-width: 480px).
+
+In the <body> tag, we have several sections like:
+
+An introductory section: includes a headline, couple of subtitles, something about the author's tech skills and a warning.
+A history section: introduces a bit about the history and a button links to '/history/' in a new tab.
+A repository section: information about the code for the current page, including a link to the GitHub repository.
+A site status link and contact information along with links to the author's email, a blog, and a telegram channel.
+A note section: gives information that the website is still under construction.
+A license information section: explains the license and restrictions under that and provides a link to a license documentation page.
+These sections are created using different HTML tags such as <h1>, <h2>, <h3>, <h5>, <p>, <button>, and <div>. Each of them serves content about the website and has different levels of importance to the user.

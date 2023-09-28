@@ -1,0 +1,107 @@
+<!-- As you will notice in the following code there are a lot of comments to make reading simple to non programmers, i did use an AI tool to generate the comments -->
+
+<!-- This is an HTML document -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Configure viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to Google Fonts 'Roboto' with specific font weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Inline CSS styles for the entire page -->
+  <style>
+    /* Apply styles to all elements */
+    * {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      background-color: #262626;
+      box-sizing: border-box;
+    }
+
+    /* Reset margin and padding for the body element */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    /* Style for history and GitHub buttons */
+    .history-btn, .github-btn {
+      background-color: purple;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: all 0.5s;
+    }
+
+    /* Change button color on hover */
+    .history-btn:hover, .github-btn:hover {
+      background-color: #800080;
+    }
+
+    /* Style for header level 5 */
+    h5 {
+      font-weight: bold;
+    }
+
+    /* Media query for screens with a width of 768px or less */
+    @media screen and (max-width: 768px) {
+      .history-btn, .github-btn {
+          display: block;
+          width: 80%;
+          margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Display a 404 error message -->
+    <h1>404</h1>
+    <p>Sorry, the page you're looking for doesn't exist.</p>
+    
+    <!-- Display a countdown message using JavaScript -->
+    <p id="message">I will send you back home very soon (Stay safe, friend and do not get lost)...</p>
+  </div>
+
+  <!-- JavaScript code to handle the countdown and redirection -->
+  <script>
+    let count = 5;
+
+    // Update the countdown message
+    document.querySelector("#message").innerHTML = `I will send you back home in ${count--} seconds (Stay safe, friend and do not get lost)...`;
+
+    // Update the countdown every second
+    setInterval(() => {
+      if (count >= 1) {
+        if (count === 1) {
+          document.querySelector("#message").innerHTML = 'I will send you back home in 1 second (Stay safe, friend and do not get lost)...';
+        } else {
+          document.querySelector("#message").innerHTML = `I will send you back home in ${count} seconds (Stay safe, friend and do not get lost)...`;
+        }
+      } else {
+        // Redirect to the home page after countdown
+        window.location.href = "/";
+      }
+      count--;
+    }, 1000);
+  </script>
+</body>
+
+</html>

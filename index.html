@@ -1,0 +1,117 @@
+<!-- As you will notice in the following code there are a lot of comments to make reading simple to non programmers, i did use an AI tool to generate the comments -->
+
+<!-- This is an HTML document -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Set the title of the webpage -->
+  <title>OverloadedTech</title>
+  
+  <!-- Configure viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to Google Fonts 'Roboto' -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <!-- Inline CSS styles for the entire page -->
+  <style>
+    /* Apply styles to all elements */
+    * {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      background-color: #262626;
+      box-sizing: border-box;
+    }
+    
+    /* Reset margin and padding for the body element */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Style for history and GitHub buttons */
+    .history-btn, .github-btn {
+      background-color: purple;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: all 0.5s;
+    }
+    
+    /* Change button color on hover */
+    .history-btn:hover, .github-btn:hover {
+      background-color: #800080;
+    }
+    
+    /* Style for header level 5 */
+    h5 {
+      font-weight: bold;
+    }
+    
+    /* Media query for screens with a width of 480px or less */
+    @media screen and (max-width: 480px) {
+      body {
+        height: max-content;
+        flex-wrap: wrap;
+      }
+      
+      /* Make buttons block-level and center them */
+      .history-btn, .github-btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page Header -->
+  <h1>OverloadedTech</h1>
+  
+  <!-- Introduction -->
+  <h3>Warning: This website is lack of graphics because I want to keep it simple (graphical updates in future).</h3>
+  <h2>A developer like many others</h2>
+  <h5>Python, JavaScript, TypeScript (And HTML, of course to make this web page). Currently learning Python Better</h5>
+  
+  <!-- History Section -->
+  <h2>A bit of history</h2>
+  <p>If you came here and you are interested in my story (Most Unlikely), you can open it with the button below</p>
+  <button class="history-btn" onclick="window.open('/history/', '_blank');">Open History</button>
+  
+  <!-- GitHub Repository Section -->
+  <h2>Website Code GitHub Repository</h2>
+  <p>The code for this website is available on GitHub at the following address: https://github.com/overloadedtech/website</p>
+  <button class="github-btn" onclick="window.open('https://github.com/overloadedtech/website', '_blank');">Visit the Repo</button>
+  <p>If you're a developer and interested in the project, feel free to check it out and if you want (for some unknown reason) do change something.</p>
+  
+  <!-- Site Status Link -->
+  <p style="font-size: 30px;">If the site goes down, you can check its status at <a href="https://status.lucazani.com" target="_blank">status.lucazani.com</a></p>
+  
+  <!-- Contact Information -->
+  <h2>Contact Me</h2>
+  <p>Please feel free to drop me an email at: <a href="mailto:luca.zani@lucazani.com">luca.zani@lucazani.com</a>. Remember: I will only reply from the same email you sent your email.</p>
+  <p style="font-size: 25px;">I also have a telegram channel too, join it clicking <a href="https://t.me/overloadedtechinfo" target="_blank">here</a>.</p>
+  <p style="font-size: 20px;">If you're interested, I used to maintain a blog at <a href="https://blog.lucazani.com" target="_blank">blog.lucazani.com</a>. However, it is now deprecated, and no new posts will be added. It is highly recommended to check my Telegram channel for updates.</p>
+  
+  <!-- Note Section -->
+  <div class="note">
+    <h1>NOTE</h1>
+    <p>This site is still under construction. For now, there is not much available here.</p>
+  </div>
+  
+  <!-- License Information Section -->
+  <div class="license-warning">
+    <h2>License Information</h2>
+    <p>Please note that this site is under the MIT License. With this license, you are permitted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software provided that the above copyright notice and this permission notice are included in all copies or substantial portions of the Software.</p>
+    <p>YOU CANNOT use this Software for commercial purposes. For more details, please refer to the license <a href="https://github.com/overloadedtech/website/blob/main/LICENSE.md" target="_blank">documentation</a>.</p>
+  </div>
+</body>
+</html>
